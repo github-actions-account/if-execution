@@ -6,7 +6,14 @@ jobs:
     strategy:
         matrix:         
             node-version: [12,14,16]
-            oprating-system: [ubuntu-latest]        
+            oprating-system: [ubuntu-latest, windows-latest]
+            include:
+                - node-version:  18
+                  oprating-system: ubuntu-latest
+        
+            exclude:
+                - node-version: 12
+                  oprating-system: windows-latest                       
     runs-on: ${{ matrix.oprating-system }}
     steps: 
         - name: Git Checkout
