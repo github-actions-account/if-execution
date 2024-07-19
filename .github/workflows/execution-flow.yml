@@ -82,4 +82,4 @@ jobs:
       - name: Output information 
         run: |
          echo "Somethings went wrong"
-         echo ${{ github }}    
+         echo "${{ github }}"    
