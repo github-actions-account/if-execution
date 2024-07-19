@@ -2,8 +2,8 @@ name: reuse workflow
 on:
  workflow_call:
     inputs: 
-        artifact-name:
-        requried: false
+      artifact-name:
+        required: false
         default: dist 
         type: string 
 jobs: 
