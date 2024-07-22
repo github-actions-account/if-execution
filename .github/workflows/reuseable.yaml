@@ -4,7 +4,7 @@ on:
     inputs: 
       artifact-name:
         required: false
-        default: dist-files
+        default: dist
         type: string 
 jobs: 
     deploy: 
